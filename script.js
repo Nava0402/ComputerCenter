@@ -152,5 +152,16 @@ function calcular() {
         total += 1300;
     }
 
-    document.getElementById("total").innerText = "Total: $" + total;
+    var descuento = 0;
+    if (total >= 5000) {
+        descuento = ((total / 5000)) * 1000;
+    }
+
+    var totalconiva = total * 0.16;
+    var subtotal = total + totalconiva;
+    var totalfinal = subtotal - descuento;
+
+    document.getElementById("subtotal").innerText = "Subtotal : $" + subtotal;
+    document.getElementById("descuento").innerText = "Descuento: -$" + descuento;
+    document.getElementById("total").innerText = "Total: $" + totalfinal;
 }

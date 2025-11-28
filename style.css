@@ -104,6 +104,32 @@ select:hover{
     margin: 10px;
 }
 
+.descuento{
+    background: linear-gradient(to left, #333, #21202b);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.subtotal{
+    background: linear-gradient(to left, #333, #21202b);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
 button{
     width: calc(100% - 20px);
     margin: 10px;
