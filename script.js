@@ -161,7 +161,7 @@ function calcular() {
     var subtotal = total + totalconiva;
     var totalfinal = subtotal - descuento;
 
-    document.getElementById("subtotal").innerText = "Subtotal : $" + subtotal;
-    document.getElementById("descuento").innerText = "Descuento: -$" + descuento;
-    document.getElementById("total").innerText = "Total: $" + totalfinal;
+    document.getElementById("subtotal").innerText = "Subtotal : $" + subtotal.toFixed(2);
+    document.getElementById("descuento").innerText = "Descuento: -$" + descuento.toFixed(2);
+    document.getElementById("total").innerText = "Total: $" + totalfinal.toFixed(2);
 }
