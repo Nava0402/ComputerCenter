@@ -151,5 +151,6 @@ function calcular() {
     if (document.getElementById("caja").checked) {
         total += 1300;
     }
+
     document.getElementById("total").innerText = "Total: $" + total;
 }
