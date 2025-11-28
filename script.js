@@ -9,8 +9,7 @@ function calcular() {
     var total = 0;
 
     if (gabinete == "ninguna") {
-        alert("Seleccione un gabinete");
-        return;
+        total += 0;
     } else if (gabinete == "minitorre") {
         total += 700;
     } else if (gabinete == "torre") {
@@ -22,8 +21,7 @@ function calcular() {
     }
 
     if (procesador == "ninguna") {
-        alert("Seleccione un procesador");
-        return;
+        total += 0;
     } else if (procesador == "celeron") {
         total += 900;
     } else if (procesador == "inteltres") {
@@ -35,8 +33,7 @@ function calcular() {
     }
 
     if (discoduro == "ninguna") {
-        alert("Seleccione un disco duro");
-        return;
+        total += 0;
     } else if (discoduro == "500GB") {
         total += 500;
     } else if (discoduro == "750GB") {
@@ -50,8 +47,7 @@ function calcular() {
     }
 
     if (memoriaram == "ninguna") {
-        alert("Seleccione una memoria RAM");
-        return;
+        total += 0;
     } else if (memoriaram == "4GB") {
         total += 600;
     } else if (memoriaram == "8GB") {
@@ -61,8 +57,7 @@ function calcular() {
     }
 
     if (monitor == "ninguna") {
-        alert("Seleccione un monitor");
-        return;
+        total += 0;
     } else if (monitor == "17pulgadas") {
         total += 500;
     } else if (monitor == "19pulgadas") {
@@ -77,7 +72,84 @@ function calcular() {
         total += 2000;
     }
 
-    if (document.getElementById())
+    if (document.getElementById("mouse").checked) {
+        total += 300;
+    }
 
+    if (document.getElementById("teclado").checked) {
+        total += 300;
+    }
+
+    if (document.getElementById("bocinas").checked) {
+        total += 300;
+    }
+
+    if (document.getElementById("webcam").checked) {
+        total += 300;
+    }
+
+    if (document.getElementById("ups").checked) {
+        total += 300;
+    }
+
+    if (document.getElementById("alfombrilla").checked) {
+        total += 700;
+    }
+
+    if (document.getElementById("controlgamer").checked) {
+        total += 700;
+    }
+
+    if (document.getElementById("luzrgb").checked) {
+        total += 700;
+    }
+
+    if (document.getElementById("sillagamer").checked) {
+        total += 700;
+    }
+
+    if (document.getElementById("adaptadorwifi").checked) {
+        total += 700;
+    }
+
+    if (document.getElementById("hubusb").checked) {
+        total += 1000;
+    }
+
+    if (document.getElementById("audifonos").checked) {
+        total += 1000;
+    }
+
+    if (document.getElementById("monitoradicional").checked) {
+        total += 1000;
+    }
+
+    if (document.getElementById("soporte").checked) {
+        total += 1000;
+    }
+
+    if (document.getElementById("ventilador").checked) {
+        total += 1000;
+    }
+
+    if (document.getElementById("microfono").checked) {
+        total += 1300;
+    }
+
+    if (document.getElementById("lectorsd").checked) {
+        total += 1300;
+    }
+
+    if (document.getElementById("cablehdmi").checked) {
+        total += 1300;
+    }
+
+    if (document.getElementById("base").checked) {
+        total += 1300;
+    }
+
+    if (document.getElementById("caja").checked) {
+        total += 1300;
+    }
     document.getElementById("total").innerText = "Total: $" + total;
 }
