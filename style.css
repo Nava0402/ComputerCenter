@@ -9,18 +9,11 @@ body{
     text-align: center;
 }
 
-h1{
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-h2{
-    font-size: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 2px #000000;
+.titulos{
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px 0px;
 }
 
 form{
@@ -38,7 +31,6 @@ form{
 .MemoriaRAM,
 .Monitor,
 .Accesorios{
-    background:linear-gradient (to right, #858383, #204aa3);
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     padding: 15px;
@@ -69,7 +61,7 @@ option{
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #aaa;
+    border: none;
     border-radius: 8px;
     box-sizing: border-box;
     background-color: #21202b;
@@ -99,3 +91,42 @@ select:hover{
     background-color: #333;
 }
 
+.total{
+    background: linear-gradient(to left, #333, #21202b);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+button{
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background: linear-gradient(45deg, #333, #21202b);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+button:hover{
+    background: radial-gradient(circle, #21202b, #333);
+}
+
+footer{
+    max-width:1100px; 
+    margin:10px auto; 
+    padding:10px 14px; 
+    font-size:14px;
+    color:#ffffff;
+    font-weight: bold;
+}
